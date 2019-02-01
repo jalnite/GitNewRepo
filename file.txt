@@ -1,0 +1,29 @@
+
+
+<html>
+<head>
+<script type="text/javascript">
+function fvalidate()
+{
+var uname=document.getElementById("txtuname").value;
+var password=document.getElementById("txtpassword").value;
+if(uname==password)
+{
+alert("welcome"+uname);
+}
+else
+{
+alert("invaliduser");
+}
+}
+</script></head>
+<body>
+<form id="f1"method="get"action="">
+Enter username
+<input type="txt"id="txtuname"><br>
+Enter password
+<input type="password"id="txtpassword"><br>
+<input type="submit"id="signin"value="btnsignin"onclick="fvalidate();">
+</form>
+</body>
+</html>
